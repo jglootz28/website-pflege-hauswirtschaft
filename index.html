@@ -3,52 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pflege & Hausservice — Freundliche Seniorenbetreuung</title>
-  <meta name="description" content="Liebevolle Pflege, fröhliche Betreuung und zuverlässige Hauswirtschaft & Gebäudereinigung für Senioren. Individuelle Betreuung zuhause — 24/7 erreichbar." />
+  <title>Pflege & Hausservice — Freundlich & Einladend</title>
+  <meta name="description" content="Liebevolle Pflege, herzliche Betreuung und zuverlässiger Hausservice für ein angenehmes Zuhause. Einfach, freundlich und individuell." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#fff7f0; --card:#ffffff; --muted:#555555; --accent:#ff7f50; --secondary:#00bfff; --success:#28a745; --glass: rgba(255,255,255,0.85);
+      --bg:#fffaf0; --card:#ffffff; --muted:#555555; --accent:#ff6f61; --secondary:#42a5f5;
       font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0f1724;}
-    header{backdrop-filter: blur(6px);background:var(--glass);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(15,20,36,0.06);padding:12px 0}
+    body{margin:0;background:var(--bg);color:#000;line-height:1.6}
+    header{backdrop-filter: blur(6px);background:#ffffffcc;position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(15,20,36,0.06);padding:12px 0}
     .container{max-width:1100px;margin:0 auto;padding:24px}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px}
     .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--secondary));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     nav a{margin-left:16px;color:var(--accent);text-decoration:none;font-weight:600;font-size:16px}
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0;background:url('https://images.unsplash.com/photo-1605902711622-cfb43c443f74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg') no-repeat center/cover;border-radius:14px;color:white;}
-    .hero h1{font-size: clamp(26px,4.5vw,42px);margin:0 0 16px;text-shadow:0 2px 6px rgba(0,0,0,0.4);}
-    .lead{line-height:1.6;text-shadow:0 1px 3px rgba(0,0,0,0.25);font-size:18px}
-    .cta{display:flex;gap:12px;margin-top:20px}
-    .btn{padding:14px 20px;border-radius:12px;border:0;cursor:pointer;font-weight:700;font-size:16px}
-    .btn-primary{background:var(--accent);color:#fff}
-    .btn-outline{background:var(--secondary);color:#fff;border:1px solid var(--secondary)}
-
-    .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 4px 20px rgba(15,20,36,0.06);transition:transform 0.2s;}
-    .card:hover{transform:translateY(-4px)}
-    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
-    .service{padding:18px;border-radius:12px;overflow:hidden;text-align:center}
-    .service img{width:100%;height:180px;object-fit:cover;border-radius:12px;margin-bottom:12px}
+    .hero{padding:48px 0;text-align:center;}
+    .hero h1{font-size: clamp(26px,4.5vw,42px);margin:0 0 16px;}
+    .lead{line-height:1.6;font-size:18px}
+    .service-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:24px}
+    .service{padding:18px;border-radius:12px;overflow:hidden;text-align:center;background:var(--card);box-shadow:0 4px 20px rgba(15,20,36,0.06)}
     .service h3{margin:8px 0 6px;color:var(--accent)}
     .service p{margin:0;color:var(--muted);font-size:15px}
-
-    .right-cta{position:relative}
-    .contact-panel{padding:18px;border-radius:12px;background:linear-gradient(135deg,var(--secondary),var(--accent));color:white}
-    .small{font-size:14px;color:var(--glass)}
-
-    .features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:32px 0}
-    .feature{display:flex;gap:12px;align-items:flex-start}
-
     footer{padding:36px 0;color:var(--muted);text-align:center}
-
-    @media (max-width:980px){.hero{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:600px){nav a{display:none}.service-grid{grid-template-columns:1fr}.container{padding:16px}}
-
-    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(15,20,36,0.08);font-size:14px}
-    .muted{color:var(--muted);font-size:13px}
+    @media (min-width:600px){.service-grid{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
@@ -58,7 +37,7 @@
         <div class="logo">PB</div>
         <div>
           <div style="font-weight:800;color:var(--accent)">Pflege & Hausservice</div>
-          <div class="small" style="color:var(--secondary)">Zuverlässig • Persönlich • Regional</div>
+          <div class="small" style="color:var(--secondary)">Zuverlässig • Herzlich • Für Sie da</div>
         </div>
       </div>
       <nav aria-label="Hauptnavigation">
@@ -71,88 +50,41 @@
 
   <main class="container">
     <section class="hero">
-      <div>
-        <h1>Liebevolle Pflege, fröhliche Betreuung & zuverlässiger Hausservice</h1>
-        <p class="lead">Individuelle Pflege, freundliche Betreuung und saubere, gepflegte Räume – alles für ein angenehmes Zuhause.</p>
-        <div class="cta">
-          <button class="btn btn-primary" onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Kostenloses Beratungsgespräch</button>
-          <button class="btn btn-outline" onclick="document.getElementById('leistungen').scrollIntoView({behavior:'smooth'})">Unsere Leistungen</button>
-        </div>
-      </div>
+      <h1>Liebevolle Pflege & Freundliche Betreuung für Senioren</h1>
+      <p class="lead">Wir kümmern uns herzlich um Sie oder Ihre Angehörigen – zu Hause und in gewohnter Umgebung.</p>
     </section>
 
     <section id="leistungen">
-      <h2 style="color:var(--accent)">Unsere Leistungen</h2>
-      <p class="muted" style="font-size:16px">Maßgeschneiderte Angebote für Pflege, Betreuung und Hausservice.</p>
-
+      <h2 style="color:var(--accent); text-align:center;">Unsere Leistungen</h2>
       <div class="service-grid">
-        <div class="service card">
-          <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443f74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg" alt="Pflege">
+        <div class="service">
           <h3>Pflege</h3>
-          <p>Große Pflege (Komplettversorgung) und kleine Pflege (Grundversorgung & Unterstützung).</p>
+          <p>Große Pflege (Komplettversorgung) und kleine Pflege (Unterstützung im Alltag) für Senioren.</p>
         </div>
-        <div class="service card">
-          <img src="https://images.unsplash.com/photo-1614780632220-8f4a0c2a2076?crop=entropy&cs=tinysrgb&fit=max&fm=jpg" alt="Betreuung">
+        <div class="service">
           <h3>Betreuung</h3>
-          <p>Einkaufen, Begleitung bei Spaziergängen, Arztbesuchen und Alltagshilfe.</p>
+          <p>Einkaufen, Spaziergänge, Arztbesuche und liebevolle Gesellschaft im Alltag.</p>
         </div>
-        <div class="service card">
-          <img src="https://images.unsplash.com/photo-1581579189853-6c519d4c09d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg" alt="Hauswirtschaft">
-          <h3>Hauswirtschaft & Gebäudereinigung</h3>
-          <p>Reinigung rund ums Haus, regelmäßige Hauswirtschaft und professioneller Hausservice.</p>
+        <div class="service">
+          <h3>Hauswirtschaft & Reinigung</h3>
+          <p>Sauberes Zuhause, Wäschepflege, Küchenpflege und professionelle Gebäudereinigung.</p>
         </div>
       </div>
     </section>
 
-    <section id="über-uns" style="margin-top:32px">
+    <section id="über-uns" style="margin-top:32px; text-align:center;">
       <h2 style="color:var(--secondary)">Über uns</h2>
-      <div class="card" style="display:flex;gap:16px;align-items:center">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg" alt="Teamfoto" style="width:120px;height:120px;border-radius:12px" />
-        <div>
-          <p class="muted">Wir sind ein qualifiziertes Team aus examinierten Pflegekräften, Betreuungspersonal und Hauswirtschaftskräften. Freundlichkeit, Humor und ein respektvoller Umgang stehen bei uns im Mittelpunkt.</p>
-          <p class="muted">Zertifikate und Referenzen stellen wir Ihnen gerne persönlich vor.</p>
-        </div>
-      </div>
+      <p>Wir sind ein freundliches Team aus Pflegekräften, Betreuungspersonal und Hauswirtschaftskräften. Unser Ziel: dass Sie sich zu Hause rundum wohlfühlen.</p>
+      <p>Zertifikate und Referenzen stellen wir Ihnen gerne persönlich vor.</p>
     </section>
 
-    <section id="kontakt" style="margin-top:32px">
-      <h2 style="color:var(--accent)">Kontakt & Erstgespräch</h2>
-      <div style="display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:12px">
-        <div class="card">
-          <form onsubmit="event.preventDefault();alert('Formular lokal simuliert — Backend nötig für echte Anfragen')">
-            <label class="muted">Name*</label>
-            <input required placeholder="Vorname Nachname" />
-            <label class="muted">Telefon oder E-Mail*</label>
-            <input required placeholder="Kontakt" />
-            <label class="muted">Leistung</label>
-            <select>
-              <option>Große Pflege</option>
-              <option>Kleine Pflege</option>
-              <option>Betreuung</option>
-              <option>Hauswirtschaft</option>
-            </select>
-            <label class="muted">Nachricht</label>
-            <textarea rows="4" placeholder="Kurz Ihr Anliegen"></textarea>
-            <div style="margin-top:12px;display:flex;gap:8px">
-              <button class="btn btn-primary">Anfrage senden</button>
-              <button type="button" class="btn btn-outline" onclick="window.location='tel:+491701234567'">Anrufen</button>
-            </div>
-          </form>
-        </div>
-
-        <aside class="card contact-panel">
-          <h4>Kontaktinformationen</h4>
-          <p>Telefon: <strong>+49 170 1234567</strong></p>
-          <p>E-Mail: <strong>info@pflege-hausservice.de</strong></p>
-          <p>Einsatzgebiet: <strong>Regionale Einsätze — auf Anfrage bundesweit</strong></p>
-          <div style="margin-top:10px">
-            <strong>Öffnungszeiten</strong>
-            <div>Mo–Fr: 08:00–18:00 • Notfälle nach Vereinbarung</div>
-          </div>
-        </aside>
-      </div>
+    <section id="kontakt" style="margin-top:32px; text-align:center;">
+      <h2 style="color:var(--accent)">Kontakt</h2>
+      <p><strong>Telefon:</strong> +49 170 1234567</p>
+      <p><strong>E-Mail:</strong> info@pflege-hausservice.de</p>
+      <p><strong>Einsatzgebiet:</strong> Regionale Einsätze — auf Anfrage bundesweit</p>
+      <p><strong>Öffnungszeiten:</strong> Mo–Fr: 08:00–18:00 • Notfälle nach Vereinbarung</p>
     </section>
-
   </main>
 
   <footer>
